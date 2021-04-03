@@ -1,3 +1,22 @@
-.App {
+.grid {
+  position: relative;
   text-align: center;
+  border: 1px solid #ccc;
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  width: 40rem;
+  min-height: 55rem;
+  color: #555;
+
+  display: grid;
+  grid-template-columns: repeat(3, [col-start] 1fr [col-end]);
+  grid-template-rows: max-content;
+  grid-auto-rows: max-content;
+  // align-content: center;
+
+  background: linear-gradient(
+    to right,
+    rgba(161, 196, 253, 0.815),
+    rgba(194, 233, 251, 0.795)
+  );
 }

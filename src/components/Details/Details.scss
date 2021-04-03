@@ -1,0 +1,23 @@
+.Details {
+  grid-row: 6/7;
+  grid-column: col-start 1 / col-end 3;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 2rem 0;
+}
+
+.detail {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.8rem;
+
+  &__icon {
+    height: 2.5rem;
+  }
+}

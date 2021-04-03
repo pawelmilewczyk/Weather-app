@@ -1,0 +1,21 @@
+.Sun {
+  grid-column: col-start 1 / col-end 3;
+  padding: 2rem 0;
+
+  display: flex;
+  justify-content: space-evenly;
+
+  &__container {
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+  }
+
+  &__icon {
+    width: 2.5rem;
+  }
+
+  &__time {
+    font-size: 2rem;
+  }
+}

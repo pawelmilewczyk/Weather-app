@@ -1,0 +1,46 @@
+.Form {
+  grid-column: col-start 1 / col-end 3;
+  grid-row: 2/3;
+  display: flex;
+
+  &__input {
+    border: none;
+    outline: none;
+    padding: 1rem 2rem;
+    width: 100%;
+    font-size: 3rem;
+    background-color: transparent;
+    color: #555;
+    margin-left: 2rem;
+
+    &::-webkit-input-placeholder {
+      color: rgba(#555, 0.4);
+    }
+  }
+
+  &__submit {
+    background-color: rgba(#fff, 0.4);
+    padding: 0rem 2rem;
+    margin-right: 1rem;
+    height: 3rem;
+    align-self: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: #555;
+    text-transform: uppercase;
+    transition: all 0.2s;
+    box-shadow: 1px 2px 3px rgba(#000, 0.1);
+    outline: none;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 2px 3px 4px rgba(#000, 0.2);
+    }
+
+    &:active {
+      transform: translateY(0);
+      box-shadow: 1px 2px 3px rgba(#000, 0.1);
+    }
+  }
+}
