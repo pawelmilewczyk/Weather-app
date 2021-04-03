@@ -25,7 +25,7 @@ function Search() {
     if (city) {
       axios
         .get(
-          `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`
+          `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`
         )
         .then((response) => {
           console.log(response.data);

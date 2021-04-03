@@ -50,7 +50,7 @@ function Local() {
     if (lat && lng) {
       axios
         .get(
-          `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${API_KEY}`
+          `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${API_KEY}`
         )
         .then((response) => {
           console.log(response.data);
