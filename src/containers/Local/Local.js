@@ -53,7 +53,7 @@ function Local() {
           `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${API_KEY}`
         )
         .then((response) => {
-          console.log(response.data);
+          // console.log(response.data);
           setCity(response.data.name);
           setTemperature(response.data.main.temp);
           setIcon(response.data.weather[0].icon);
