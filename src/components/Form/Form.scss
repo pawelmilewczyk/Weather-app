@@ -6,6 +6,13 @@
   @media only screen and (max-width: 325px) {
     flex-direction: column;
   }
+  @media only screen and (max-height: 650px) and (min-width: 550px) {
+    grid-column: col-start 1 / col-end 5;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
 
   &__input {
     border: none;
@@ -15,15 +22,15 @@
     font-size: 3rem;
     background-color: transparent;
     color: #555;
-    margin-left: 2rem;
 
     &::-webkit-input-placeholder {
       color: rgba(#555, 0.4);
     }
-    @media only screen and (max-width: 450px) {
-      margin-left: 0;
-    }
+
     @media only screen and (max-width: 325px) {
+      text-align: center;
+    }
+    @media only screen and (max-height: 650px) and (min-width: 550px) {
       text-align: center;
     }
   }

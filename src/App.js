@@ -11,8 +11,8 @@ function App() {
     <div className="grid">
       <Nav />
       <Switch>
-        <Route exact path="/" component={Local}></Route>
         <Route path="/search" component={Search}></Route>
+        <Route path="/" component={Local}></Route>
       </Switch>
     </div>
   );

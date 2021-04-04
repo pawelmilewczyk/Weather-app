@@ -8,6 +8,10 @@
   display: flex;
   justify-content: space-between;
 
+  @media only screen and (max-height: 650px) and (min-width: 550px) {
+    grid-column: col-start 1 / col-end 4;
+  }
+
   &__item {
     display: block;
     border-radius: 5px;

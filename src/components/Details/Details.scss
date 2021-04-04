@@ -4,12 +4,15 @@
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  // grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
   row-gap: 2rem;
-  // justify-items: center;
 
   @media only screen and (max-width: 300px) {
     grid-template-columns: 1fr;
+  }
+
+  @media only screen and (max-height: 650px) and (min-width: 550px) {
+    grid-column: col-start 3 / col-end 4;
+    grid-row: 3/4;
   }
 
   font-size: 1.5rem;

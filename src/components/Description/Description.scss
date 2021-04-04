@@ -6,4 +6,9 @@
   font-size: 1.2rem;
   letter-spacing: 0.2rem;
   padding: 1.5rem;
+
+  @media only screen and (max-height: 650px) and (min-width: 550px) {
+    grid-column: col-start 1 / col-end 2;
+    grid-row: 5/6;
+  }
 }

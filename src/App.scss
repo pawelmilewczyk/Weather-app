@@ -9,12 +9,12 @@
   min-height: 55rem;
   color: #555;
 
-  @media only screen and (max-width: 450px) {
-    width: 100vw;
-    height: 100vh;
+  @media only screen and (max-height: 780px) {
+    height: 90vh;
   }
 
-  @media only screen and (max-height: 780px) {
+  @media only screen and (max-width: 450px) {
+    width: 100vw;
     height: 100vh;
   }
 
@@ -22,7 +22,28 @@
   grid-template-columns: repeat(3, [col-start] 1fr [col-end]);
   grid-template-rows: max-content 10rem;
   grid-auto-rows: 1fr;
-  // align-content: center;
+  align-items: center;
+  @media only screen and (max-height: 700px) {
+    grid-template-rows: max-content 8rem;
+  }
+  @media only screen and (max-height: 650px) {
+    grid-template-rows: max-content 6rem;
+  }
+
+  @media only screen and (max-height: 650px) and (min-width: 550px) {
+    grid-template-columns: repeat(4, [col-start] 1fr [col-end]);
+    grid-auto-rows: 1fr;
+    width: 80vw;
+    // min-height: 35rem;
+    min-height: 10rem;
+  }
+
+  @media only screen and (max-height: 320px) and (min-width: 550px) {
+    width: 100vw;
+    min-height: auto;
+    height: 100vh;
+    border-radius: 0;
+  }
 
   background: linear-gradient(
     to right,
