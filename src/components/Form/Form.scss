@@ -3,6 +3,10 @@
   grid-row: 2/3;
   display: flex;
 
+  @media only screen and (max-width: 325px) {
+    flex-direction: column;
+  }
+
   &__input {
     border: none;
     outline: none;
@@ -15,6 +19,12 @@
 
     &::-webkit-input-placeholder {
       color: rgba(#555, 0.4);
+    }
+    @media only screen and (max-width: 450px) {
+      margin-left: 0;
+    }
+    @media only screen and (max-width: 325px) {
+      text-align: center;
     }
   }
 
@@ -41,6 +51,10 @@
     &:active {
       transform: translateY(0);
       box-shadow: 1px 2px 3px rgba(#000, 0.1);
+    }
+
+    @media only screen and (max-width: 325px) {
+      margin-right: 0;
     }
   }
 }

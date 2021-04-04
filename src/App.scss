@@ -1,17 +1,27 @@
 .grid {
   position: relative;
   text-align: center;
-  border: 1px solid #ccc;
-  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  // border: 1px solid #ccc;
+  box-shadow: 2rem 4rem 10rem rgba(0, 0, 0, 0.3);
+  border-radius: 2rem;
+  overflow: hidden;
   width: 40rem;
   min-height: 55rem;
   color: #555;
 
+  @media only screen and (max-width: 450px) {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  @media only screen and (max-height: 780px) {
+    height: 100vh;
+  }
+
   display: grid;
   grid-template-columns: repeat(3, [col-start] 1fr [col-end]);
-  grid-template-rows: max-content;
-  grid-auto-rows: max-content;
+  grid-template-rows: max-content 10rem;
+  grid-auto-rows: 1fr;
   // align-content: center;
 
   background: linear-gradient(

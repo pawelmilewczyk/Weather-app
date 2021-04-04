@@ -4,6 +4,13 @@
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  // grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  row-gap: 2rem;
+  // justify-items: center;
+
+  @media only screen and (max-width: 300px) {
+    grid-template-columns: 1fr;
+  }
 
   font-size: 1.5rem;
   font-weight: 600;
