@@ -16,6 +16,7 @@
   @media only screen and (max-width: 450px) {
     width: 100vw;
     height: 100vh;
+    border-radius: 0;
   }
 
   display: grid;
@@ -34,7 +35,6 @@
     grid-template-columns: repeat(4, [col-start] 1fr [col-end]);
     grid-auto-rows: 1fr;
     width: 80vw;
-    // min-height: 35rem;
     min-height: 10rem;
   }
 
