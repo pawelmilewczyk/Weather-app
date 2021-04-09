@@ -1,7 +1,9 @@
 .Form {
-  grid-column: col-start 1 / col-end 3;
-  grid-row: 2/3;
-  display: flex;
+  width: 100%;
+  position: absolute;
+  top: 10%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 
   @media only screen and (max-width: 325px) {
     flex-direction: column;
@@ -15,16 +17,18 @@
   }
 
   &__input {
+    grid-column: 1/1;
     border: none;
     outline: none;
     padding: 1rem 2rem;
     width: 100%;
-    font-size: 3rem;
+    font-size: 2.5rem;
     background-color: transparent;
     color: #555;
 
     &::-webkit-input-placeholder {
       color: rgba(#555, 0.4);
+      font-size: 2rem;
     }
 
     @media only screen and (max-width: 325px) {
@@ -62,6 +66,39 @@
 
     @media only screen and (max-width: 325px) {
       margin-right: 0;
+    }
+  }
+
+  ::-webkit-scrollbar {
+    width: 0.7rem;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: whitesmoke;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 0.5rem;
+    background-color: #bbb;
+  }
+}
+
+.Hints {
+  grid-column: 1/-1;
+  font-size: 1.3rem;
+  width: 100%;
+  max-height: 17.5rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  transition: all 0.2s;
+
+  &__City {
+    background-color: whitesmoke;
+    padding: 1rem 3rem;
+    transition: all 0.2s;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #e1e1e1;
     }
   }
 }

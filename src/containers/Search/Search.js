@@ -75,6 +75,7 @@ function Search() {
   const inputHandler = (e) => {
     e.preventDefault();
     setCity(e.target[0].value);
+    document.querySelector("#container").style.height = "0";
   };
 
   return (
